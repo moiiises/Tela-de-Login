@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto Unama</title>
+</head>
+<body>
+    <section>
+        <h1 class="titulo_login">Faça Login</h1>
+        <div class="container_input">
+            <input type="email" placeholder="E-mail" class="inputAnimado" required>
+        </div>
+        <div class="container_input">
+            <input id="input_senha" type="password" placeholder="Senha" class="inputAnimado" required>
+            <img src="assets/eye.svg" alt="icon" class="icon">
+        </div> 
+        <div class="container_input"> 
+            <a href="#" class="botao_login">Login</a>
+        </div>
+        <div class="container_li">
+            <ul>
+                <li>Esqueceu sua <a href="#">senha?</a></li>
+                <li>Não tem conta? <a href="#">Criar</a></li>
+            </ul>
+        </div>   
+    </section>
+    <div>
+        <img src="assets/login.png" alt="imagem_fundo" class="imagem_fundo">
+    </div>  
+    <script>
+        let container = document.querySelector('div');
+        let input = document.querySelector('#input_senha');
+        let icon = document.querySelector('img');
+
+        icon.addEventListener('click', function() {
+            container.classList.toggle('visível');
+            if(container.classList.contains('visível')) {
+                icon.src = 'assets/eye-off.svg';
+                input.type = 'text';
+            } else {
+                icon.src = 'assets/eye.svg';
+                input.type = 'password';
+            }
+        });
+    </script>
+</body>
+</html>

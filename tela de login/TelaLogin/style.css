@@ -1,0 +1,112 @@
+body {
+    background-color: #00030C;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin-left: 135px;
+    margin-top: 200px;
+    text-align: center;
+    padding: 10px;
+}
+
+.titulo_login {
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+
+.inputAnimado{
+    height: 50px;
+    margin: 10px 25px;
+    width: 450px;
+    display: block;
+    border: none;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #1abc9c;
+    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+    background-position: -500px 0;
+    background-size: 500px 100%;
+    background-repeat: no-repeat;
+    color: aliceblue;
+  }
+  
+  .inputAnimado:focus, .inputAnimado:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+  }
+  
+  .inputAnimado::-webkit-input-placeholder {
+    font-family: 'roboto', sans-serif;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .inputAnimado:focus::-webkit-input-placeholder, .inputAnimado:valid::-webkit-input-placeholder {
+    color: #1abc9c;
+    font-size: 13px;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    visibility: visible !important;
+  }
+
+.botao_login {
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+    background-color: #407bff;
+    text-align: center;
+    width: 24em;
+    padding: 17px 0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    right: 0.7em;
+}
+
+.botao_login:hover {
+    background-color: #7b7b7b;
+    transition: 0.5s;
+}
+
+.container_li {
+    text-align: justify;
+    margin-left: 40px;
+    color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container_li li {
+    margin-bottom: 10px;
+}
+
+.container_li a{
+    color: #1abc9c;
+}
+ .container_li a:hover {
+    text-decoration: none;
+ }
+.icon {
+    position: absolute;
+    margin-left: 11em;
+    bottom: 17em;
+}
+.imagem_fundo {
+    position: absolute;
+    align-items: center;
+    margin-top: 4em;
+    width: 36em;
+}
